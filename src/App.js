@@ -24,6 +24,9 @@ const emojiDictionary = {
   "📱": "Mobile Phone",
   "☎": "Telephone",
   "🕯": "Candle",
+  "🧥": "Coat",
+  "🧦": "Socks",
+  "🔦": "Flashlight",
   "💎": "Gem Stone"
 };
 var emojisWeKnow = Object.keys(emojiDictionary);
@@ -43,9 +46,12 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1>Object Interpreter</h1>
-      <input onChange={emojiInputHandler} />
-      <h2>Meaning ~ {meaning}</h2>
+      <h1>OBJECT INTERPRETER</h1>
+      <input
+        onChange={emojiInputHandler}
+        placeholder="Place your emoji here..."
+      />
+      <h2>Object Name - {meaning}</h2>
       <h3>Emoji's we know...</h3>
       {emojisWeKnow.map(function (emoji) {
         return (
