@@ -1,2 +1,3 @@
 # Object-Interpreter
-Created with CodeSandbox
+This is a React JS app that interprets the emoji based on user's choice.
+This app is created using CodeSandbox.
